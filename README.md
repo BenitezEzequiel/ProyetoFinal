@@ -1,3 +1,10 @@
+# ProyetoFinal
+Este repositorio está configurado para desplegarse como página web usando **GitHub Pages**.
+- La página principal se encuentra en `index.html`.
+- Accede al sitio publicado en: https://BenitezEzequiel.github.io/ProyetoFinal
+
+---
+
 # LAVEDERO H&L Premium Detailing
 
 Proyecto final para el curso de **Desarrollo Web**: un e-commerce/landing para un lavadero de autos de alta gama, con catálogo dinámico, carrito y formulario de contacto.
@@ -25,11 +32,8 @@ Proyecto final para el curso de **Desarrollo Web**: un e-commerce/landing para u
 3. Confirmar reserva (simulación) desde el modal.
 4. En **Reserva tu turno**, completar el formulario (Formspree).
 
-## Despliegue
-Este proyecto puede desplegarse en **GitHub Pages** (o cualquier host estático):
-1. Subir el repositorio.
-2. Ir a **Settings → Pages** y habilitar **GitHub Pages**.
 
 ## Repositorio
 - https://github.com/BenitezEzequiel/ProyetoFinal
+
 
