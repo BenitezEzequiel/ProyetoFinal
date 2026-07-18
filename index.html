@@ -3,124 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gleam & Gloss: Lavadero de autos premium y servicios de detailing profesional. Cuidado exclusivo para tu vehículo.">
-    <title>Gleam & Gloss | Premium Car Wash</title>
+    <meta name="description" content="LAVERO H&L - Lavadero de autos premium. Detailing, pulido y cuidado estético vehicular con estándares de excelencia.">
+    <title>LAVERO H&L | Car Wash Premium & Detailing</title>
+    
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <header class="bg-dark text-white py-3 sticky-top">
-        <nav class="container d-flex justify-content-between align-items-center">
-            <h1 class="h3 mb-0">GLEAM & GLOSS</h1>
-            <ul class="nav">
-                <li class="nav-item"><a href="#inicio" class="nav-link text-white">Inicio</a></li>
-                <li class="nav-item"><a href="#productos" class="nav-link text-white">Servicios</a></li>
-                <li class="nav-item"><a href="#contacto" class="nav-link text-white">Contacto</a></li>
-                <li class="nav-item">
-                    <button class="btn btn-outline-light position-relative" data-bs-toggle="modal" data-bs-target="#cartModal">
-                        🛒 <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
-                    </button>
-                </li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top px-4">
+            <a class="navbar-brand" href="#">LAVERO <span>H&L</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resenas">Reseñas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light position-relative ms-lg-3" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            Carrito 🛒
+                            <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
-        <!-- Hero Section con Background Applied -->
-        <section id="inicio" class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-section d-flex align-items-center justify-content-center text-center">
             <div class="hero-content">
-                <h2 class="display-3 fw-bold">Excelencia en Detailing</h2>
-                <p class="lead">Tu vehículo merece un brillo impecable y protección duradera.</p>
-                <a href="#productos" class="btn btn-primary btn-lg">Ver Servicios</a>
+                <h1>Excelencia en Cuidado Automotriz</h1>
+                <p>Tu vehículo merece un tratamiento de clase mundial.</p>
+                <a href="#servicios" class="btn btn-gold">Ver Servicios</a>
             </div>
         </section>
 
-        <!-- Productos (Flexbox) -->
-        <section id="productos" class="container py-5">
+        <!-- Servicios (Fetch & Cards con Flexbox) -->
+        <section id="servicios" class="container my-5 py-5">
             <h2 class="text-center mb-5">Nuestros Servicios Premium</h2>
-            <div id="productos-container" class="d-flex flex-wrap justify-content-center gap-4">
-                <!-- Se cargará dinámicamente con JS -->
-            </div>
-        </section>
-
-        <!-- Multimedia (Video/Iframe) -->
-        <section class="bg-light py-5">
-            <div class="container text-center">
-                <h3>Mira cómo trabajamos</h3>
-                <div class="ratio ratio-16x9 mt-4 mx-auto" style="max-width: 800px;">
-                    <iframe src="https://www.youtube.com/embed/PjGZ6vS8UWo" title="Car Wash Process" allowfullscreen></iframe>
-                </div>
+            <div id="productos-container" class="row g-4 justify-content-center">
+                <!-- Se carga con JS -->
             </div>
         </section>
 
         <!-- Reseñas (Grid) -->
-        <section id="reseñas" class="container py-5">
-            <h2 class="text-center mb-5">Lo que dicen nuestros clientes</h2>
-            <div class="reviews-grid">
-                <div class="review-card">"El mejor servicio de detailing en la ciudad." - Juan P.</div>
-                <div class="review-card">"Mi auto quedó como nuevo después del sellado cerámico." - Elena R.</div>
-                <div class="review-card">"Atención premium y puntualidad extrema." - Carlos M.</div>
-                <div class="review-card">"El lavado de motor fue impecable." - Sofía G.</div>
+        <section id="resenas" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Lo que dicen nuestros clientes</h2>
+                <div class="resenas-grid">
+                    <div class="resena-card">"El mejor trato que ha recibido mi Audi. El pulido de ópticas quedó impecable." - <strong>Carlos R.</strong></div>
+                    <div class="resena-card">"Puntualidad y profesionalismo. El detailing de motor es de otro nivel." - <strong>Elena M.</strong></div>
+                    <div class="resena-card">"Usan productos de primera. El brillo de la carrocería dura semanas." - <strong>Juan P.</strong></div>
+                    <div class="resena-card">"Atención premium real. Muy recomendados para autos de alta gama." - <strong>Sofia L.</strong></div>
+                </div>
             </div>
         </section>
 
-        <!-- Formulario de Contacto -->
-        <section id="contacto" class="container py-5">
-            <h2 class="text-center mb-4">Reserva tu turno</h2>
-            <form id="contact-form" action="https://formspree.io/f/tu_id_aqui" method="POST" class="mx-auto" style="max-width: 600px;">
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre Completo</label>
-                    <input type="text" name="name" id="nombre" class="form-control" required>
+        <!-- Contacto (Formspree & Media Queries) -->
+        <section id="contacto" class="container my-5 py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h2 class="text-center mb-4">Reserva tu Turno</h2>
+                    <form id="contact-form" action="https://formspree.io/f/TU_ID_AQUI" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre Completo</label>
+                            <input type="text" name="name" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" name="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje / Vehículo</label>
+                            <textarea name="message" class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100">Enviar Solicitud</button>
+                    </form>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Correo Electrónico</label>
-                    <input type="email" name="email" id="email" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                    <label for="mensaje" class="form-label">Mensaje o Vehículo</label>
-                    <textarea name="message" id="mensaje" class="form-control" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-dark w-100">Enviar Solicitud</button>
-            </form>
+            </div>
         </section>
     </main>
 
-    <footer class="bg-dark text-white py-4 text-center">
-        <p>&copy; 2023 Gleam & Gloss Premium Detailing. Todos los derechos reservados.</p>
-    </footer>
-
     <!-- Modal del Carrito -->
     <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Tu Carrito de Servicios</h5>
+                    <h5 class="modal-title">Tu Selección de Servicios</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div id="cart-items">
-                        <!-- Items dinámicos -->
-                    </div>
-                    <hr>
-                    <div class="d-flex justify-content-between fw-bold">
-                        <span>Total:</span>
-                        <span id="cart-total">$0</span>
+                    <ul id="cart-items" class="list-group mb-3">
+                        <!-- Items del carrito -->
+                    </ul>
+                    <div class="text-end">
+                        <h4>Total: $<span id="cart-total">0</span></h4>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" onclick="clearCart()">Vaciar</button>
-                    <button class="btn btn-primary" onclick="checkout()">Confirmar Reserva</button>
+                    <button type="button" class="btn btn-secondary" onclick="vaciarCarrito()">Vaciar</button>
+                    <button type="button" class="btn btn-dark" onclick="finalizarCompra()">Confirmar Pedido</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Bootstrap Bundle with Popper -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2023 LAVERO H&L - Estética Vehicular Premium. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>
+

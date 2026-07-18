@@ -2,29 +2,43 @@
     {
         "id": 1,
         "nombre": "Lavado Premium",
-        "precio": 50,
-        "imagen": "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=400",
-        "descripcion": "Lavado exterior profundo, encerado y pulido de ópticas."
+        "precio": 5000,
+        "descripcion": "Incluye lavado artesanal, encerado acrílico y aspirado profundo.",
+        "imagen": "img/image7.jpg"
     },
     {
         "id": 2,
-        "nombre": "Limpieza de Motor",
-        "precio": 35,
-        "imagen": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80&w=400",
-        "descripcion": "Desengrasado técnico y protección de plásticos/mangueras."
+        "nombre": "Pulido de Ópticas",
+        "precio": 2500,
+        "descripcion": "Restauración de transparencia y sellado UV para tus faros.",
+        "imagen": "img/image1.jpg"
     },
     {
         "id": 3,
-        "nombre": "Tratamiento de Tapizados",
-        "precio": 80,
-        "imagen": "https://images.unsplash.com/photo-1599256621730-535171e28e50?auto=format&fit=crop&q=80&w=400",
-        "descripcion": "Limpieza a vapor y nutrición de cueros o telas."
+        "nombre": "Detailing de Motor",
+        "precio": 4500,
+        "descripcion": "Limpieza técnica detallada y protección de plásticos/mangueras.",
+        "imagen": "img/image4.jpg"
     },
     {
         "id": 4,
-        "nombre": "Servicio de Detailing",
-        "precio": 150,
-        "imagen": "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&q=80&w=400",
-        "descripcion": "Corrección de pintura y sellado cerámico por 12 meses."
+        "nombre": "Limpieza de Tapizados",
+        "precio": 8000,
+        "descripcion": "Tratamiento de cuero o tela con máquinas de inyección/extracción.",
+        "imagen": "img/image3.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Tratamiento 3M",
+        "precio": 12000,
+        "descripcion": "Protección de pintura de alta gama con productos certificados 3M.",
+        "imagen": "img/image5.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Limpieza de Llantas Extreme",
+        "precio": 1500,
+        "descripcion": "Eliminación de ferodo y descontaminado químico de llantas.",
+        "imagen": "img/image6.jpg"
     }
 ]
