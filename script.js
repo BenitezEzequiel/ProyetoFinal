@@ -24,9 +24,14 @@ function renderizarProductos(productos) {
     productos.forEach(prod => {
         const div = document.createElement('div');
         div.className = 'col-12 col-md-6 col-lg-4 d-flex';
+
+        // Soporte para "imagen principal" opcional.
+        // Si el catálogo trae `imagen8`, se usa como fallback; si no, usa `imagen`.
+        const imgSrc = prod.imagen8 || prod.imagen;
+
         div.innerHTML = `
             <div class="card w-100">
-                <img src="${prod.imagen}" class="card-img-top" alt="${prod.nombre}">
+                <img src="${imgSrc}" class="card-img-top" alt="${prod.nombre}">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">${prod.nombre}</h5>
                     <p class="card-text text-muted">${prod.descripcion}</p>
@@ -75,7 +80,7 @@ function actualizarInterfazCarrito() {
     const cartList = document.getElementById('cart-items');
     const totalSpan = document.getElementById('cart-total');
     const countBadge = document.getElementById('cart-count');
-    
+
     cartList.innerHTML = '';
     let total = 0;
     let count = 0;
@@ -83,7 +88,7 @@ function actualizarInterfazCarrito() {
     carrito.forEach(item => {
         total += item.precio * item.cantidad;
         count += item.cantidad;
-        
+
         const li = document.createElement('li');
         li.className = 'list-group-item d-flex justify-content-between align-items-center';
         li.innerHTML = `
@@ -116,7 +121,7 @@ function finalizarCompra() {
 }
 
 // 4. Validación básica de formulario
-document.getElementById('contact-form').addEventListener('submit', (e) => {
+document.getElementById('contact-form')?.addEventListener('submit', (e) => {
     const email = document.getElementById('email').value;
     if (!email.includes('@')) {
         e.preventDefault();
