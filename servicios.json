@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nombre": "Lavado Premium",
+        "precio": 50,
+        "imagen": "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=400",
+        "descripcion": "Lavado exterior profundo, encerado y pulido de ópticas."
+    },
+    {
+        "id": 2,
+        "nombre": "Limpieza de Motor",
+        "precio": 35,
+        "imagen": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80&w=400",
+        "descripcion": "Desengrasado técnico y protección de plásticos/mangueras."
+    },
+    {
+        "id": 3,
+        "nombre": "Tratamiento de Tapizados",
+        "precio": 80,
+        "imagen": "https://images.unsplash.com/photo-1599256621730-535171e28e50?auto=format&fit=crop&q=80&w=400",
+        "descripcion": "Limpieza a vapor y nutrición de cueros o telas."
+    },
+    {
+        "id": 4,
+        "nombre": "Servicio de Detailing",
+        "precio": 150,
+        "imagen": "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&q=80&w=400",
+        "descripcion": "Corrección de pintura y sellado cerámico por 12 meses."
+    }
+]
