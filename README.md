@@ -1,16 +1,35 @@
 # Gleam & Gloss Premium Detailing
 
-Este es el proyecto final para el curso de Desarrollo Web. Consiste en un e-commerce para un lavadero de autos de alta gama.
+Proyecto final para el curso de **Desarrollo Web**: un e-commerce/landing para un lavadero de autos de alta gama, con catálogo dinámico, carrito y formulario de contacto.
 
-## Características:
-- **HTML5 Semántico**: Uso de header, main, footer, y sections.
-- **Bootstrap 5**: Utilizado para la estructura base y el modal del carrito.
-- **CSS Custom**: Diseño premium con Flexbox para productos y Grid para reseñas.
-- **JavaScript Dinámico**: Consumo de servicios vía Fetch, manipulación de DOM y persistencia de datos en LocalStorage.
-- **Funcionalidad**: Carrito de compras que permite sumar, ver y eliminar servicios.
-- **Formulario**: Integrado con Formspree para recepción de mensajes.
-- **SEO & Accesibilidad**: Meta-tags optimizados y atributos `alt` en imágenes.
+## Tecnologías
+- **HTML5 semántico** (header, main, footer y secciones)
+- **Bootstrap 5** (UI base + modal del carrito)
+- **CSS** con variables y estilos premium (hero con background, Flexbox y Grid)
+- **JavaScript**:
+  - Carga de servicios desde `servicios.json` (Fetch)
+  - Renderizado dinámico
+  - Carrito con persistencia en **LocalStorage**
+  - Validación básica del formulario
 
-## Instrucciones para despliegue:
-1. Subir los archivos a un repositorio de GitHub.
-2. Ir a Settings -> Pages y activar GitHub Pages.
+## Estructura de archivos
+- `index.html`: estructura principal y modal del carrito
+- `style.css`: estilos del sitio (hero, tarjetas, reseñas, carrito)
+- `script.js`: lógica de carga/DOM y carrito
+- `servicios.json`: catálogo de servicios (id, nombre, precio, imagen, descripción)
+- `README.md`: documentación
+
+## Cómo usar
+1. Abrir `index.html` en el navegador.
+2. Consultar la sección **Servicios** y agregar al carrito.
+3. Confirmar reserva (simulación) desde el modal.
+4. En **Reserva tu turno**, completar el formulario (Formspree).
+
+## Despliegue
+Este proyecto puede desplegarse en **GitHub Pages** (o cualquier host estático):
+1. Subir el repositorio.
+2. Ir a **Settings → Pages** y habilitar **GitHub Pages**.
+
+## Repositorio
+- https://github.com/BenitezEzequiel/ProyetoFinal
+
