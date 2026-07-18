@@ -1,4 +1,4 @@
-# Gleam & Gloss Premium Detailing
+# LAVERO H&L Premium Detailing
 
 Proyecto final para el curso de **Desarrollo Web**: un e-commerce/landing para un lavadero de autos de alta gama, con catálogo dinámico, carrito y formulario de contacto.
 
