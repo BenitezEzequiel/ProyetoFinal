@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // 1. Fetch API para cargar productos
 async function fetchServicios() {
     try {
-        const response = await fetch('js/servicios.json');
+        const response = await fetch('servicios.json');
         const data = await response.json();
         renderizarProductos(data);
     } catch (error) {
